@@ -106,7 +106,7 @@
     "title": "Cerro Negro",
     "category": "AVENTURA",
     "excerpt": "La arena negra donde el silencio se vuelve pura adrenalina volcánica.",
-    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80",
     "imageAlt": "Personas escalando el Cerro Negro",
     "location": "Telica",
     "readingTime": 7,
@@ -129,9 +129,9 @@
     "sidebarCaption": "La naturaleza en su estado más puro y desafiante.",
     "galleryTitle": "El Poder de la Tierra",
     "gallery": [
-      { "src": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80", "alt": "Escalando el volcán" },
+      { "src": "https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=800&q=80", "alt": "Escalando el volcán" },
       { "src": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=800&q=80", "alt": "Vista del cráter" },
-      { "src": "https://images.unsplash.com/photo-1497981461988-de342831ada2?w=800&q=80", "alt": "Textura de la arena volcánica" },
+      { "src": "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?w=800&q=80", "alt": "Textura de la arena volcánica" },
       { "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80", "alt": "Atardecer volcánico" }
     ]
   },
@@ -208,11 +208,11 @@
     "title": "Azotea de Catedral",
     "category": "CONTEMPLACIÓN",
     "excerpt": "Vistas panorámicas sobre los tejados de arcilla al atardecer. Un punto de encuentro entre la tierra y el cielo.",
-    "image": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=800&q=80",
+    "image": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80",
     "imageAlt": "Vista desde la azotea de la Catedral de León",
     "location": "Centro",
     "readingTime": 4,
-    "heroImage": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=1600&q=80",
+    "heroImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=1600&q=80",
     "heroImageAlt": "Atardecer desde la Catedral de León",
     "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
     "quote": "Desde arriba, León se revela como un mar de tejas rojas y campanarios. La ciudad respira.",
@@ -226,13 +226,13 @@
       { "label": "Horario", "value": "Hasta las 5:30 PM (acceso controlado)" },
       { "label": "Costo", "value": "$3 USD (entrada general)" }
     ],
-    "sidebarImage": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=600&q=80",
+    "sidebarImage": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=600&q=80",
     "sidebarImageAlt": "Vista de la ciudad desde la catedral",
     "sidebarCaption": "León vista desde las alturas: un espectáculo que merece la pena.",
     "galleryTitle": "León desde las Alturas",
     "gallery": [
-      { "src": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=800&q=80", "alt": "Atardecer desde la catedral" },
-      { "src": "https://images.unsplash.com/photo-1549480017-764a3d7a8f2e?w=800&q=80", "alt": "Cúpulas de la catedral" },
+      { "src": "https://images.unsplash.com/photo-1517457373958-b7bdd4587205?w=800&q=80", "alt": "Atardecer desde la catedral" },
+      { "src": "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80", "alt": "Cúpulas de la catedral" },
       { "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80", "alt": "Vista panorámica" },
       { "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80", "alt": "Cielo al atardecer" }
     ]
