@@ -1,0 +1,39 @@
+---
+interface Props {
+  title: string
+  description: string
+  label?: string
+  image?: string
+  parallax?: boolean
+}
+
+const { label, title, description, image, parallax } = Astro.props
+---
+
+<section class={`relative ${image ? 'h-[60vh]' : 'mb-stack-lg'} flex items-center overflow-hidden ${image ? '' : 'justify-start pt-10'}`}>
+  {image && (
+    <div class="absolute inset-0 z-0">
+      <img
+        class={`w-full h-full object-cover grayscale-[20%] brightness-75 ${parallax ? 'parallax-img' : ''}`}
+        src={image}
+        alt=""
+        loading="eager"
+      />
+    </div>
+  )}
+  <div class={`relative z-10 ${image ? 'text-center w-full px-margin-mobile' : 'max-w-container-max mx-auto px-margin-mobile md:px-gutter w-full'}`}>
+    {label && (
+      <p class={`font-label-caps text-label-caps mb-4 tracking-[0.2em] uppercase ${image ? 'text-white/90' : 'text-secondary'}`}>
+        {label}
+      </p>
+    )}
+    <h1 class={`font-display-lg text-display-lg-mobile md:text-display-lg max-w-3xl ${image ? 'text-white mx-auto' : 'text-primary'}`}>
+      {title}
+    </h1>
+    {description && (
+      <p class={`font-body-lg text-body-lg max-w-2xl mt-6 ${image ? 'text-white/80 mx-auto' : 'text-on-surface-variant'}`}>
+        {description}
+      </p>
+    )}
+  </div>
+</section>

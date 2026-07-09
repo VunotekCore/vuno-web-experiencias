@@ -1,0 +1,31 @@
+---
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+import CategoryFilter from '../molecules/CategoryFilter.astro'
+import { Coffee, Mountain, TreePine, Users, Laptop, MessageCircle, Sun } from 'lucide'
+---
+
+<section class="bg-surface-container-low py-stack-lg">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    <AnimatedReveal>
+      <div class="text-center mb-stack-md">
+        <h3 class="font-label-caps text-label-caps text-secondary tracking-[0.3em] mb-4">Explorar por experiencias</h3>
+        <div class="w-20 h-px bg-secondary/30 mx-auto"></div>
+      </div>
+    </AnimatedReveal>
+    <div class="flex flex-wrap justify-center gap-stack-md">
+      <CategoryFilter label="Desayunos" icon={Coffee} />
+      <CategoryFilter label="Aventura" icon={Mountain} />
+      <CategoryFilter label="Naturaleza" icon={TreePine} />
+      <CategoryFilter label="Padre e hijo" icon={Users} />
+      <CategoryFilter label="Trabajo remoto" icon={Laptop} />
+      <CategoryFilter label="Conversación" icon={MessageCircle} />
+      <CategoryFilter label="Contemplación" icon={Sun} />
+    </div>
+    <div class="text-center mt-stack-md">
+      <a href="/experiencias" class="font-label-caps text-label-caps text-primary hover:text-secondary transition-colors inline-flex items-center gap-2">
+        Ver todas las experiencias
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>

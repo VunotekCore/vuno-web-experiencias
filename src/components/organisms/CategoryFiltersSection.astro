@@ -1,0 +1,28 @@
+---
+import CategoryFilter from '../molecules/CategoryFilter.astro'
+import EditorialDivider from '../atoms/EditorialDivider.astro'
+import { Coffee, Mountain, TreePine, Laptop, Users, MessageCircle, Sun } from 'lucide'
+---
+
+<section class="mb-stack-lg">
+  <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-4">
+    <CategoryFilter label="Desayunos" icon={Coffee} />
+    <CategoryFilter label="Aventura" icon={Mountain} />
+    <CategoryFilter label="Naturaleza" icon={TreePine} />
+    <CategoryFilter label="Trabajo Remoto" icon={Laptop} />
+    <CategoryFilter label="Padre e Hijo" icon={Users} />
+    <CategoryFilter label="Conversación" icon={MessageCircle} />
+    <CategoryFilter label="Contemplación" icon={Sun} />
+  </div>
+</section>
+
+<EditorialDivider />
+
+<script>
+  document.querySelectorAll('button').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('button').forEach(b => b.classList.remove('border-secondary'))
+      btn.classList.add('border-secondary')
+    })
+  })
+</script>

@@ -1,0 +1,9 @@
+---
+interface Props {
+  class?: string
+}
+---
+
+<div class={`relative h-px bg-gradient-to-r from-transparent via-secondary/40 to-transparent w-full my-stack-md ${Astro.props.class || ''}`}>
+  <span class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 bg-background px-4 text-secondary text-xs">◆</span>
+</div>

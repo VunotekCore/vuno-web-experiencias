@@ -1,0 +1,40 @@
+---
+import Button from '../atoms/Button.astro'
+import LabelTag from '../atoms/LabelTag.astro'
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+---
+
+<section class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-stack-lg">
+  <div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-1 gap-gutter h-auto md:h-[500px]">
+    <AnimatedReveal delay={1}>
+      <div class="md:col-span-2 bg-surface-container-low p-stack-md flex flex-col justify-center border-l-4 border-secondary">
+        <LabelTag>Lugares para cada momento</LabelTag>
+        <h2 class="font-display-lg text-4xl serif mb-6 mt-4">Cada momento tiene su lugar.</h2>
+        <p class="font-body-md text-on-surface-variant max-w-sm mb-8">Descubre experiencias que se adaptan a lo que hoy quieres vivir. Desde la euforia de la cima hasta el café de la mañana.</p>
+        <div>
+          <Button href="/experiencias">Descubrir experiencias</Button>
+        </div>
+      </div>
+    </AnimatedReveal>
+    <AnimatedReveal delay={2}>
+      <div class="md:col-span-1 h-full">
+        <img
+          class="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&q=80"
+          alt="Atardecer en la costa del Pacífico de Nicaragua"
+          loading="lazy"
+        />
+      </div>
+    </AnimatedReveal>
+    <AnimatedReveal delay={3}>
+      <div class="md:col-span-1 h-full">
+        <img
+          class="w-full h-full object-cover"
+          src="https://images.unsplash.com/photo-1585314062340-f1a5a7c9328d?w=600&q=80"
+          alt="Calle colonial en León, Nicaragua"
+          loading="lazy"
+        />
+      </div>
+    </AnimatedReveal>
+  </div>
+</section>

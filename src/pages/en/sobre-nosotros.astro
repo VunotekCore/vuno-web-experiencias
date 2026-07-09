@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'
+import Navbar from '../../components/organisms/Navbar.astro'
+import Footer from '../../components/organisms/Footer.astro'
+import PageHero from '../../components/organisms/PageHero.astro'
+import MissionSection from '../../components/organisms/MissionSection.astro'
+import MethodCardsSection from '../../components/organisms/MethodCardsSection.astro'
+import ValuesMosaicSection from '../../components/organisms/ValuesMosaicSection.astro'
+import MethodologyCTASection from '../../components/organisms/MethodologyCTASection.astro'
+---
+
+<BaseLayout
+  lang="en"
+  title="About Us"
+  description="Sabores & Experiencias was born from the need to restore truthfulness in the digital age. Learn about our story and methodology."
+>
+  <Navbar />
+  <main>
+    <PageHero
+      title="The gaze that discovers the authentic."
+      label="Our Mission"
+      description=""
+      image="https://images.unsplash.com/photo-1605540436563-5bca919ae7e9?w=1600&q=80"
+    />
+    <MissionSection />
+    <MethodCardsSection />
+    <ValuesMosaicSection />
+    <MethodologyCTASection />
+  </main>
+  <Footer />
+</BaseLayout>

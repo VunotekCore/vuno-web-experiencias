@@ -1,0 +1,240 @@
+[
+  {
+    "slug": "cafe-retorno",
+    "title": "Café Retorno",
+    "category": "DESAYUNOS",
+    "excerpt": "Un ritual matutino sin prisas en el corazón de la ciudad colonial. El aroma del grano recién tostado envuelve la estancia.",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80",
+    "imageAlt": "Taza de café artesanal en una mesa de madera",
+    "location": "León",
+    "readingTime": 6,
+    "heroImage": "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600&q=80",
+    "heroImageAlt": "Cafetería colonial con luz cálida",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "En el corazón palpitante de León, existe un refugio donde el tiempo no corre, sino que se diluye en una taza de cerámica hecha a mano.",
+    "paragraphs": [
+      "Nuestra llegada a Café Retorno no fue anunciada. Como dicta nuestra metodología, entramos como cualquier otro visitante, buscando no el servicio perfecto de un hotel de cinco estrellas, sino la autenticidad de un espacio que entiende su territorio. Ubicado en una casona colonial restaurada con un rigor casi arqueológico, el café se presenta no como un negocio, sino como una declaración de principios sobre la paciencia.",
+      "El aroma a grano recién tostado —procedente de las tierras altas de Matagalpa— envuelve el zaguán antes de que uno pueda siquiera ver las mesas. Aquí, la molienda se ajusta cada mañana según la humedad del aire leonés. No es pretensión; es respeto por la materia prima.",
+      "El Ritual del Desayuno: Pedimos el 'Desayuno de la Casa'. No hay artificios. El gallo pinto tiene ese toque de fritura exacta que solo se consigue con horas de reposo. El queso frito cruje con autoridad, y las tortillas, servidas en canastas de mimbre envueltas en lino, llegan con el calor del comal todavía atrapado en sus pliegues."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Conversación tranquila, trabajo remoto ligero" },
+      { "label": "Especialidad", "value": "V60 de origen único, Repostería artesanal" },
+      { "label": "Ambiente", "value": "Editorial Moderno, Colonial Minimalista" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&q=80",
+    "sidebarImageAlt": "Manos preparando café de especialidad",
+    "sidebarCaption": "Observamos el ritual de la preparación sin intervenir.",
+    "galleryTitle": "La Estética del Espacio",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80", "alt": "Interior de cafetería colonial" },
+      { "src": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80", "alt": "Tostada artesanal con aguacate" },
+      { "src": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=80", "alt": "Libros y detalles decorativos" },
+      { "src": "https://images.unsplash.com/photo-1498804103079-a6351b050096?w=800&q=80", "alt": "Hoja tropical con sombras geométricas" }
+    ]
+  },
+  {
+    "slug": "cheskos-coffee-shop",
+    "title": "Chesko's Coffee Shop",
+    "category": "DESAYUNOS",
+    "excerpt": "Una pausa necesaria antes de comenzar el día. El aroma del tostado perfecto.",
+    "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=800&q=80",
+    "imageAlt": "Interior de un coffee shop minimalista",
+    "location": "León",
+    "readingTime": 5,
+    "heroImage": "https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=1600&q=80",
+    "heroImageAlt": "Cafetería con grandes ventanales",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "Un espacio donde el diseño minimalista se encuentra con la calidez del trato nicaragüense.",
+    "paragraphs": [
+      "Chesko's Coffee Shop representa esa nueva ola de cafeterías leonesas que entienden que el café es tanto una experiencia sensorial como un acto social. Con una estética limpia que combina madera clara con acentos negros, el lugar invita a quedarse.",
+      "El menú de desayunos es reducido pero cuidado: cada plato está pensado para complementar la experiencia del café. Probamos su cappuccino con leche de almendras artesanal y un pan de masa madre con aguacate y huevos poché. La combinación funcionó. El servicio, atento sin ser invasivo, completa una experiencia que recomendaríamos sin reservas.",
+      "Es el tipo de lugar que uno quiere tener cerca de casa. No busca impresionar con artificios, sino con consistencia. Y eso, en nuestra experiencia, es lo más difícil de lograr."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Trabajo remoto, lectura matutina" },
+      { "label": "Especialidad", "value": "Cappuccino artesanal, Pan de masa madre" },
+      { "label": "Ambiente", "value": "Minimalista, Contemporáneo" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1504630083234-14187a9df0f5?w=600&q=80",
+    "sidebarImageAlt": "Barista preparando café",
+    "sidebarCaption": "Cada taza es una obra de arte cuidadosamente preparada.",
+    "galleryTitle": "Espacios que Inspiran",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1559305616-3f99cd43e353?w=800&q=80", "alt": "Vista interior del café" },
+      { "src": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=80", "alt": "Café y croissant" },
+      { "src": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=800&q=80", "alt": "Detalles de la decoración" },
+      { "src": "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=80", "alt": "Tostada artesanal" }
+    ]
+  },
+  {
+    "slug": "isla-juan-venado",
+    "title": "Isla Juan Venado",
+    "category": "NATURALEZA",
+    "excerpt": "Donde el agua avanza despacio y el manglar respira su propia calma.",
+    "image": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80",
+    "imageAlt": "Manglares al amanecer en Isla Juan Venado",
+    "location": "Las Peñitas",
+    "readingTime": 8,
+    "heroImage": "https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?w=1600&q=80",
+    "heroImageAlt": "Vista aérea de manglares",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "El manglar no se apresura. Y al adentrarse en él, uno aprende que la verdadera exploración no tiene prisa.",
+    "paragraphs": [
+      "Isla Juan Venado es una reserva natural que protege uno de los ecosistemas de manglar más importantes de la costa pacífica nicaragüense. Llegamos temprano, cuando la marea empezaba a subir y el sol apenas calentaba la superficie del agua.",
+      "Nuestra travesía en bote duró aproximadamente dos horas. El guía, un pescador local reconvertido en guardaparques, señalaba aves con la misma pasión del primer día. Vimos garzas blancas, ibises negros y, si tenemos suerte, algún cocodrilo tomando sol en las orillas fangosas.",
+      "Lo que hace especial a Juan Venado no es la adrenalina ni lo espectacular del paisaje. Es la quietud. Ese silencio denso y verde que solo se encuentra en los lugares donde la naturaleza aún lleva el ritmo."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Observación de aves, fotografí­a de naturaleza" },
+      { "label": "Acceso", "value": "Bote desde Las Peñitas" },
+      { "label": "Mejor hora", "value": "Amanecer o atardecer" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=600&q=80",
+    "sidebarImageAlt": "Manglar con luz filtrada",
+    "sidebarCaption": "La naturaleza lleva el ritmo aquí. Nosotros solo observamos.",
+    "galleryTitle": "La Vida del Manglar",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80", "alt": "Atardecer en la costa" },
+      { "src": "https://images.unsplash.com/photo-1505228395891-9a51e7e86bf6?w=800&q=80", "alt": "Vista aérea de la costa" },
+      { "src": "https://images.unsplash.com/photo-1555400038-63f5ba517a47?w=800&q=80", "alt": "Bote en los manglares" },
+      { "src": "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800&q=80", "alt": "Naturaleza exuberante" }
+    ]
+  },
+  {
+    "slug": "cerro-negro",
+    "title": "Cerro Negro",
+    "category": "AVENTURA",
+    "excerpt": "La arena negra donde el silencio se vuelve pura adrenalina volcánica.",
+    "image": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80",
+    "imageAlt": "Personas escalando el Cerro Negro",
+    "location": "Telica",
+    "readingTime": 7,
+    "heroImage": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=1600&q=80",
+    "heroImageAlt": "Vista del volcán Cerro Negro",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "El Cerro Negro no impresiona por su altura. Impresiona por su desnudez. Es la tierra en su estado más primigenio.",
+    "paragraphs": [
+      "El volcán más joven de Centroamérica sigue siendo, décadas después de su última erupción, un paisaje lunar de arena volcánica negra que se extiende hasta donde alcanza la vista. Llegamos a la base después de un corto trayecto en vehículo desde León.",
+      "La caminata hasta la cima toma aproximadamente 45 minutos. La pendiente es pronunciada y la arena volcánica cede bajo cada paso, obligándote a plantar bien el pie. Es un ejercicio de paciencia y resistencia. Arriba, el cráter humea discretamente.",
+      "El descenso en tabla es, por supuesto, la recompensa. Nada prepara para esa sensación de deslizarse sobre la ladera negra a toda velocidad, con el viento golpeando el rostro. Es adrenalina pura, pero también un recordatorio de nuestra pequeñez frente a las fuerzas de la naturaleza."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Aventureros, amantes del volcanismo" },
+      { "label": "Dificultad", "value": "Moderada (subida 45 min)" },
+      { "label": "Equipo", "value": "Ropa cómoda, agua, tabla de sandboard" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=600&q=80",
+    "sidebarImageAlt": "Cráter del Cerro Negro",
+    "sidebarCaption": "La naturaleza en su estado más puro y desafiante.",
+    "galleryTitle": "El Poder de la Tierra",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1558618666-fcd25c85f82e?w=800&q=80", "alt": "Escalando el volcán" },
+      { "src": "https://images.unsplash.com/photo-1462332420958-a05d1e002413?w=800&q=80", "alt": "Vista del cráter" },
+      { "src": "https://images.unsplash.com/photo-1497981461988-de342831ada2?w=800&q=80", "alt": "Textura de la arena volcánica" },
+      { "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&q=80", "alt": "Atardecer volcánico" }
+    ]
+  },
+  {
+    "slug": "casa-del-consul",
+    "title": "Casa del Consul",
+    "category": "TRABAJO REMOTO",
+    "excerpt": "Productividad entre muros centenarios y patios coloniales. El refugio perfecto para el profesional nómada.",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80",
+    "imageAlt": "Interior colonial convertido en espacio de trabajo",
+    "location": "León",
+    "readingTime": 5,
+    "heroImage": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1600&q=80",
+    "heroImageAlt": "Casona colonial con patio interior",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "Hay espacios que entienden que el trabajo no es una condena, sino una forma de habitar el mundo.",
+    "paragraphs": [
+      "Casa del Consul es una casona colonial restaurada que funciona como espacio de coworking y hospedaje. Ubicada a dos cuadras de la Catedral de León, combina la arquitectura tradicional nicaragüense con las necesidades del trabajador remoto moderno.",
+      "El patio central es el corazón del lugar. Con una fuente de piedra que apenas susurra y plantas tropicales que filtran la luz del mediodía, es fácil entender por qué los huéspedes terminan quedándose más tiempo del planeado.",
+      "El internet es rápido y estable. Los espacios de trabajo están distribuidos estratégicamente para ofrecer privacidad sin aislamiento. Hay una cocina compartida bien equipada y un café de cortesía disponible todo el día. Es, sin duda, el mejor lugar para trabajar remotamente en León."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Nómadas digitales, freelancers" },
+      { "label": "Servicios", "value": "WiFi fibra, café, cocina compartida" },
+      { "label": "Ambiente", "value": "Colonial, Tranquilo, Profesional" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80",
+    "sidebarImageAlt": "Patio colonial con vegetación",
+    "sidebarCaption": "El equilibrio perfecto entre productividad y calma.",
+    "galleryTitle": "Arquitectura para la Productividad",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=800&q=80", "alt": "Patio central" },
+      { "src": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80", "alt": "Área de trabajo" },
+      { "src": "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80", "alt": "Detalles arquitectónicos" },
+      { "src": "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80", "alt": "Habitación restaurada" }
+    ]
+  },
+  {
+    "slug": "cocina-de-dona-juana",
+    "title": "Cocina de Doña Juana",
+    "category": "SABORES",
+    "excerpt": "Secretos ancestrales guardados en el humo del fogón. Una inmersión profunda en la tradición culinaria local.",
+    "image": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=800&q=80",
+    "imageAlt": "Manos preparando tortillas en fogón tradicional",
+    "location": "Sutiaba",
+    "readingTime": 9,
+    "heroImage": "https://images.unsplash.com/photo-1555126634-323283e090fa?w=1600&q=80",
+    "heroImageAlt": "Cocina tradicional nicaragüense",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "Detrás de cada receta familiar hay una historia que merece ser contada. Doña Juana no solo cocina: preserva la memoria de Sutiaba.",
+    "paragraphs": [
+      "En el barrio indígena de Sutiaba, escondida entre calles de adoquín y casas de colores, está la cocina de Doña Juana. No hay letrero ni menú a la entrada. Aquí se come lo que ella decide cocinar ese día, y uno acepta con la confianza de quien sabe que está en buenas manos.",
+      "Doña Juana heredó las recetas de su madre y su abuela. Sus manos, arrugadas por el tiempo y el calor del fogón, trabajan la masa con una precisión que solo da la experiencia de décadas. Sus tortillas son famosas en todo Sutiaba: delgadas, perfectamente redondas, con ese punto exacto de cocción que las hace flexibles pero firmes.",
+      "Comer en casa de Doña Juana no es solo alimentarse. Es participar de un ritual que se repite desde hace generaciones. Es entender que la cocina tradicional no es folklore: es cultura viva."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Amantes de la cocina tradicional" },
+      { "label": "Especialidad", "value": "Tortillas artesanales, Nacatamales" },
+      { "label": "Ubicación", "value": "Barrio Sutiaba, León" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=600&q=80",
+    "sidebarImageAlt": "Ingredientes frescos de la cocina tradicional",
+    "sidebarCaption": "Cada ingrediente cuenta una historia de tradición y respeto.",
+    "galleryTitle": "Sabores que Trascienden",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80", "alt": "Tortillas recién hechas" },
+      { "src": "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80", "alt": "Plato tradicional" },
+      { "src": "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80", "alt": "Fogón de leña" },
+      { "src": "https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=800&q=80", "alt": "Ingredientes frescos" }
+    ]
+  },
+  {
+    "slug": "azotea-de-catedral",
+    "title": "Azotea de Catedral",
+    "category": "CONTEMPLACIÓN",
+    "excerpt": "Vistas panorámicas sobre los tejados de arcilla al atardecer. Un punto de encuentro entre la tierra y el cielo.",
+    "image": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=800&q=80",
+    "imageAlt": "Vista desde la azotea de la Catedral de León",
+    "location": "Centro",
+    "readingTime": 4,
+    "heroImage": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=1600&q=80",
+    "heroImageAlt": "Atardecer desde la Catedral de León",
+    "subtitle": "CRÓNICA DE LUGARES Y MOMENTOS",
+    "quote": "Desde arriba, León se revela como un mar de tejas rojas y campanarios. La ciudad respira.",
+    "paragraphs": [
+      "Subir a la azotea de la Catedral de León es un rito obligado para cualquier visitante. Pero hacerlo al atardecer, cuando el sol comienza a teñir de naranja las paredes blancas de la ciudad, es una experiencia que trasciende lo turístico.",
+      "Las 34 cúpulas de la catedral más grande de Centroamérica se extienden como olas de caliza blanca contra el cielo. Desde arriba, el volcán Momotombo se recorta en el horizonte, recordándote que estás en una tierra moldeada por el fuego.",
+      "No hay prisa allá arriba. La gente se sienta en los bordes, conversa en voz baja, mira el atardecer. Es un espacio para la contemplación, para dejar que la belleza de León se despliegue lentamente ante tus ojos."
+    ],
+    "details": [
+      { "label": "Ideal para", "value": "Fotografía, atardeceres, meditación" },
+      { "label": "Horario", "value": "Hasta las 5:30 PM (acceso controlado)" },
+      { "label": "Costo", "value": "$3 USD (entrada general)" }
+    ],
+    "sidebarImage": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=600&q=80",
+    "sidebarImageAlt": "Vista de la ciudad desde la catedral",
+    "sidebarCaption": "León vista desde las alturas: un espectáculo que merece la pena.",
+    "galleryTitle": "León desde las Alturas",
+    "gallery": [
+      { "src": "https://images.unsplash.com/photo-1586275497396-27aba0bae4e7?w=800&q=80", "alt": "Atardecer desde la catedral" },
+      { "src": "https://images.unsplash.com/photo-1549480017-764a3d7a8f2e?w=800&q=80", "alt": "Cúpulas de la catedral" },
+      { "src": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80", "alt": "Vista panorámica" },
+      { "src": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&q=80", "alt": "Cielo al atardecer" }
+    ]
+  }
+]

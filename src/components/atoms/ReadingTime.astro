@@ -1,0 +1,13 @@
+---
+import { Clock } from 'lucide'
+import { icon } from '../../lib/lucide'
+
+interface Props {
+  minutes: number
+}
+---
+
+<div class="flex items-center gap-1 font-label-caps text-label-caps opacity-60">
+  <span set:html={icon(Clock, 16, 1.5)} />
+  <span>{Astro.props.minutes} min de lectura</span>
+</div>

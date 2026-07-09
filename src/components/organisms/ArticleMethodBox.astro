@@ -1,0 +1,44 @@
+---
+import { Eye, CreditCard, History } from 'lucide'
+import { icon } from '../../lib/lucide'
+
+interface Props {
+  methodTitle: string
+  description: string
+}
+---
+
+<section class="py-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+  <div class="border border-secondary/20 p-stack-md md:p-stack-lg relative">
+    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-background px-6">
+      <span class="text-secondary text-3xl" set:html={icon(History, 28, 1.5)} />
+    </div>
+    <div class="text-center max-w-2xl mx-auto mb-stack-md">
+      <h2 class="font-headline-md text-headline-md text-primary mb-4">{Astro.props.methodTitle}</h2>
+      <p class="font-body-md text-on-surface-variant">{Astro.props.description}</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+      <div class="text-center space-y-4">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center border border-secondary/30 rounded-full">
+          <span class="text-secondary" set:html={icon(Eye, 24, 1.5)} />
+        </div>
+        <h4 class="font-label-caps text-label-caps text-primary">ANONIMATO TOTAL</h4>
+        <p class="font-body-md text-on-surface-variant text-sm">Visitamos el café en tres ocasiones distintas (mañana, tarde y sábado) sin revelar nuestra identidad editorial.</p>
+      </div>
+      <div class="text-center space-y-4">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center border border-secondary/30 rounded-full">
+          <span class="text-secondary" set:html={icon(CreditCard, 24, 1.5)} />
+        </div>
+        <h4 class="font-label-caps text-label-caps text-primary">PAGO INDEPENDIENTE</h4>
+        <p class="font-body-md text-on-surface-variant text-sm">Cubrimos el 100% de nuestros consumos. No aceptamos cortesías ni invitaciones para garantizar objetividad.</p>
+      </div>
+      <div class="text-center space-y-4">
+        <div class="w-12 h-12 mx-auto flex items-center justify-center border border-secondary/30 rounded-full">
+          <span class="text-secondary" set:html={icon(History, 24, 1.5)} />
+        </div>
+        <h4 class="font-label-caps text-label-caps text-primary">CRÓNICA HONESTA</h4>
+        <p class="font-body-md text-on-surface-variant text-sm">Documentamos la experiencia tal cual sucedió, priorizando la narrativa sensorial sobre los rankings numéricos.</p>
+      </div>
+    </div>
+  </div>
+</section>

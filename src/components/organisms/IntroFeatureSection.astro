@@ -1,0 +1,52 @@
+---
+import LabelTag from '../atoms/LabelTag.astro'
+import Button from '../atoms/Button.astro'
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+import { Eye, ClipboardCheck, PenLine } from 'lucide'
+import { icon } from '../../lib/lucide'
+---
+
+<section class="py-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-gutter grid md:grid-cols-2 gap-stack-lg items-center">
+  <AnimatedReveal>
+    <div class="space-y-stack-sm">
+      <LabelTag>¿Qué es Sabores & Experiencias?</LabelTag>
+      <h2 class="font-headline-md text-headline-md serif leading-tight">
+        Hay lugares que no necesitan publicidad. <br/>Necesitan ser vividos.
+      </h2>
+      <p class="font-body-md text-body-md text-on-surface-variant">
+        Sabores & Experiencias es una guía editorial basada en experiencias reales, visitas anónimas y observación directa.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-gutter pt-8">
+        <div class="border-l border-secondary/30 pl-4 py-2">
+          <span class="text-secondary mb-2 block" set:html={icon(Eye, 24, 1.5)} />
+          <h4 class="font-label-caps text-label-caps text-primary mb-1">Visitamos</h4>
+          <p class="text-[13px] text-on-surface-variant">Como cualquier visitante común.</p>
+        </div>
+        <div class="border-l border-secondary/30 pl-4 py-2">
+          <span class="text-secondary mb-2 block" set:html={icon(ClipboardCheck, 24, 1.5)} />
+          <h4 class="font-label-caps text-label-caps text-primary mb-1">Observamos</h4>
+          <p class="text-[13px] text-on-surface-variant">Con atención a cada pequeño detalle.</p>
+        </div>
+        <div class="border-l border-secondary/30 pl-4 py-2">
+          <span class="text-secondary mb-2 block" set:html={icon(PenLine, 24, 1.5)} />
+          <h4 class="font-label-caps text-label-caps text-primary mb-1">Describimos</h4>
+          <p class="text-[13px] text-on-surface-variant">Lo que encontramos sin juzgar.</p>
+        </div>
+      </div>
+      <div class="pt-8">
+        <Button href="/sobre-nosotros">Conocer más</Button>
+      </div>
+    </div>
+  </AnimatedReveal>
+  <AnimatedReveal delay={2}>
+    <div class="relative group overflow-hidden">
+      <img
+        class="w-full aspect-[4/5] object-cover img-lift"
+        src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?w=800&q=80"
+        alt="Vista serena desde un bote en manglares de Nicaragua"
+        loading="lazy"
+      />
+      <div class="absolute inset-0 border-[16px] border-surface/10 group-hover:border-surface/20 transition-all pointer-events-none"></div>
+    </div>
+  </AnimatedReveal>
+</section>

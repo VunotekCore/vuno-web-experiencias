@@ -1,0 +1,58 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro'
+import Navbar from '../../../components/organisms/Navbar.astro'
+import Footer from '../../../components/organisms/Footer.astro'
+import ArticleHero from '../../../components/organisms/ArticleHero.astro'
+import ArticleContent from '../../../components/organisms/ArticleContent.astro'
+import BentoGallery from '../../../components/organisms/BentoGallery.astro'
+import ArticleMethodBox from '../../../components/organisms/ArticleMethodBox.astro'
+import NewsletterSection from '../../../components/organisms/NewsletterSection.astro'
+import data from '../../../data/experiencias.json'
+import type { Experiencia } from '../../../data/experiencias'
+import type { GetStaticPathsResult } from 'astro'
+
+export function getStaticPaths(): GetStaticPathsResult {
+  return data.map((exp: Experiencia) => ({
+    params: { slug: exp.slug },
+    props: { experiencia: exp },
+  }))
+}
+
+interface Props {
+  experiencia: Experiencia
+}
+
+const { experiencia } = Astro.props
+---
+
+<BaseLayout lang="en" title={experiencia.title} description={experiencia.excerpt} seo={{ ogImage: experiencia.heroImage, ogType: 'article' }}>
+  <Navbar />
+  <main>
+    <ArticleHero
+      title={`${experiencia.title}: ${experiencia.quote.split('"')[1] || ''}`}
+      subtitle={experiencia.subtitle}
+      image={experiencia.heroImage}
+      imageAlt={experiencia.heroImageAlt}
+      readingTime={experiencia.readingTime}
+      location={experiencia.location}
+    />
+    <ArticleContent
+      quote={experiencia.quote}
+      paragraphs={experiencia.paragraphs}
+      details={experiencia.details}
+      sidebarImage={experiencia.sidebarImage}
+      sidebarImageAlt={experiencia.sidebarImageAlt}
+      sidebarCaption={experiencia.sidebarCaption}
+    />
+    <BentoGallery
+      title={experiencia.galleryTitle}
+      images={experiencia.gallery as [typeof experiencia.gallery[0], typeof experiencia.gallery[0], typeof experiencia.gallery[0], typeof experiencia.gallery[0]]}
+    />
+    <ArticleMethodBox
+      methodTitle={`Our Method at ${experiencia.title}`}
+      description="We don't evaluate to judge, but to understand the soul of places. This is how our visit went:"
+    />
+    <NewsletterSection />
+  </main>
+  <Footer />
+</BaseLayout>

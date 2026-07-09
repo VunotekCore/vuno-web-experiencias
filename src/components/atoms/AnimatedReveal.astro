@@ -1,0 +1,27 @@
+---
+interface Props {
+  delay?: 1 | 2 | 3 | 4 | 5
+}
+
+const { delay } = Astro.props
+const delayClass = delay ? `reveal-delay-${delay}` : ''
+---
+
+<div class:list={['reveal', delayClass]}>
+  <slot />
+</div>
+
+<script>
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed')
+        }
+      })
+    },
+    { threshold: 0.1 }
+  )
+
+  document.querySelectorAll('.reveal').forEach((el) => observer.observe(el))
+</script>

@@ -1,0 +1,15 @@
+---
+interface Props {
+  color?: 'secondary' | 'primary' | 'white'
+}
+
+const colorMap = {
+  secondary: 'text-secondary',
+  primary: 'text-primary',
+  white: 'text-white/80',
+}
+---
+
+<span class={`font-label-caps text-label-caps tracking-widest uppercase ${colorMap[Astro.props.color || 'secondary']}`}>
+  <slot />
+</span>

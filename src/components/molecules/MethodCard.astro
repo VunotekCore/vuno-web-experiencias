@@ -1,0 +1,18 @@
+---
+import type { IconNode } from '../../lib/lucide'
+import { icon } from '../../lib/lucide'
+
+interface Props {
+  icon: IconNode
+  title: string
+  description: string
+}
+---
+
+<div class="bg-surface p-6 border border-primary/5 flex flex-col items-center text-center group hover:bg-primary transition-all duration-500">
+  <div class="mb-6 w-16 h-16 flex items-center justify-center rounded-full border border-secondary/30 group-hover:border-white/30 transition-colors">
+    <span class="text-secondary group-hover:text-white transition-colors" set:html={icon(Astro.props.icon, 32, 1.5)} />
+  </div>
+  <h3 class="font-headline-md text-2xl text-primary mb-4 group-hover:text-white">{Astro.props.title}</h3>
+  <p class="font-body-md text-on-surface-variant group-hover:text-white/80">{Astro.props.description}</p>
+</div>

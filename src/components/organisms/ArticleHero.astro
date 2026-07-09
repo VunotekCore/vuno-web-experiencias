@@ -1,0 +1,38 @@
+---
+import LabelTag from '../atoms/LabelTag.astro'
+import { Clock, MapPin } from 'lucide'
+import { icon } from '../../lib/lucide'
+
+interface Props {
+  title: string
+  subtitle: string
+  image: string
+  imageAlt: string
+  readingTime: number
+  location: string
+}
+---
+
+<section class="relative w-full h-[70vh] md:h-[85vh] flex items-end overflow-hidden">
+  <div class="absolute inset-0 bg-primary/20 z-10"></div>
+  <img
+    class="absolute inset-0 w-full h-full object-cover"
+    src={Astro.props.image}
+    alt={Astro.props.imageAlt}
+    loading="eager"
+  />
+  <div class="relative z-20 w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter pb-stack-lg">
+    <div class="max-w-3xl">
+      <LabelTag color="white">{Astro.props.subtitle}</LabelTag>
+      <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-white mb-6 mt-4">{Astro.props.title}</h1>
+      <div class="flex items-center gap-6 text-white/90">
+        <div class="flex items-center gap-2 font-label-caps text-label-caps">
+          <span set:html={icon(Clock, 18, 1.5)} /> {Astro.props.readingTime} min de lectura
+        </div>
+        <div class="flex items-center gap-2 font-label-caps text-label-caps">
+          <span set:html={icon(MapPin, 18, 1.5)} /> {Astro.props.location}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

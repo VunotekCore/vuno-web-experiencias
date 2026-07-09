@@ -1,0 +1,55 @@
+---
+import LabelTag from '../atoms/LabelTag.astro'
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+import { UserSearch, Eye, Map, Verified } from 'lucide'
+import { icon } from '../../lib/lucide'
+---
+
+<section class="py-stack-lg bg-surface-container-low">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    <AnimatedReveal>
+      <div class="text-center mb-stack-lg">
+        <LabelTag>Metodología Editorial</LabelTag>
+        <h2 class="font-display-lg text-display-lg-mobile md:text-headline-md text-primary mt-4">Nuestro compromiso con la verdad.</h2>
+      </div>
+    </AnimatedReveal>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-stack-md">
+      <div class="bg-surface p-stack-md border border-primary/5 flex flex-col items-center text-center group hover:bg-primary transition-all duration-500">
+        <div class="mb-6 w-16 h-16 flex items-center justify-center rounded-full border border-secondary/30 group-hover:border-white/30 transition-colors">
+          <span class="text-secondary text-4xl group-hover:text-white" set:html={icon(UserSearch, 32, 1.5)} />
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-4 group-hover:text-white">Visitas reales</h3>
+        <p class="font-body-md text-on-surface-variant group-hover:text-white/80">
+          Llegamos como cualquier visitante. No anunciamos nuestra presencia ni aceptamos cortesías. Pagamos nuestra cuenta para garantizar una experiencia genuina y sin sesgos.
+        </p>
+      </div>
+      <div class="bg-surface p-stack-md border border-primary/5 flex flex-col items-center text-center group hover:bg-primary transition-all duration-500">
+        <div class="mb-6 w-16 h-16 flex items-center justify-center rounded-full border border-secondary/30 group-hover:border-white/30 transition-colors">
+          <span class="text-secondary text-4xl group-hover:text-white" set:html={icon(Eye, 32, 1.5)} />
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-4 group-hover:text-white">Observación estructurada</h3>
+        <p class="font-body-md text-on-surface-variant group-hover:text-white/80">
+          Analizamos cinco ejes clave para comprender la experiencia: ambiente, servicio, propuesta, coherencia y trascendencia. Sin plantillas rígidas, pero con atención al detalle.
+        </p>
+      </div>
+      <div class="bg-surface p-stack-md border border-primary/5 flex flex-col items-center text-center group hover:bg-primary transition-all duration-500">
+        <div class="mb-6 w-16 h-16 flex items-center justify-center rounded-full border border-secondary/30 group-hover:border-white/30 transition-colors">
+          <span class="text-secondary text-4xl group-hover:text-white" set:html={icon(Map, 32, 1.5)} />
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-4 group-hover:text-white">Clasificación por tipo</h3>
+        <p class="font-body-md text-on-surface-variant group-hover:text-white/80">
+          Organizamos por tipo de vivencia (Aventura, Contemplación, Trabajo Remoto) para que encuentres el lugar exacto para tu estado de ánimo, no por su popularidad.
+        </p>
+      </div>
+      <div class="bg-surface p-stack-md border border-primary/5 flex flex-col items-center text-center group hover:bg-primary transition-all duration-500">
+        <div class="mb-6 w-16 h-16 flex items-center justify-center rounded-full border border-secondary/30 group-hover:border-white/30 transition-colors">
+          <span class="text-secondary text-4xl group-hover:text-white" set:html={icon(Verified, 32, 1.5)} />
+        </div>
+        <h3 class="font-headline-md text-2xl text-primary mb-4 group-hover:text-white">Transparencia</h3>
+        <p class="font-body-md text-on-surface-variant group-hover:text-white/80">
+          Somos un proyecto editorial independiente. La confianza se construye con honestidad. Si algo no funciona, lo mencionamos con respeto pero con claridad absoluta.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,35 @@
+---
+interface Props {
+  variant?: 'primary' | 'ghost' | 'ghost-white'
+  size?: 'md' | 'lg'
+  href?: string
+  type?: 'button' | 'submit'
+}
+
+const { variant = 'primary', size = 'md', href, type = 'button' } = Astro.props
+
+const base = 'font-label-caps text-label-caps inline-block transition-all duration-300 border-none text-center'
+
+const variants = {
+  primary: 'bg-primary text-white hover:bg-on-primary-fixed-variant',
+  ghost: 'border border-primary text-primary hover:bg-primary hover:text-white',
+  'ghost-white': 'border border-white text-white hover:bg-white hover:text-primary',
+}
+
+const sizes = {
+  md: 'px-8 py-4',
+  lg: 'px-10 py-4',
+}
+---
+
+{
+  href ? (
+    <a href={href} class={`${base} ${variants[variant]} ${sizes[size]}`}>
+      <slot />
+    </a>
+  ) : (
+    <button type={type} class={`${base} ${variants[variant]} ${sizes[size]}`}>
+      <slot />
+    </button>
+  )
+}

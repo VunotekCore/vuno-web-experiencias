@@ -1,0 +1,60 @@
+---
+import EditorialDivider from '../atoms/EditorialDivider.astro'
+
+interface Props {
+  quote: string
+  paragraphs: string[]
+  details: { label: string; value: string }[]
+  sidebarImage: string
+  sidebarImageAlt: string
+  sidebarCaption: string
+}
+---
+
+<section class="py-stack-lg max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-stack-md">
+    <div class="lg:col-span-7">
+      <p class="font-display-lg text-headline-md text-primary mb-8 leading-relaxed italic">
+        "{Astro.props.quote}"
+      </p>
+      <div class="space-y-6 text-on-surface-variant">
+        {Astro.props.paragraphs.map((p) => (
+          <p class="font-body-lg text-body-lg">{p}</p>
+        ))}
+      </div>
+      <div class="relative py-stack-sm my-10">
+        <EditorialDivider />
+      </div>
+    </div>
+    <aside class="lg:col-span-4 lg:col-start-9 space-y-stack-md">
+      <div class="p-stack-sm border border-primary/10 bg-surface-container-low">
+        <h3 class="font-label-caps text-label-caps text-secondary mb-4">DETALLES DE LA EXPERIENCIA</h3>
+        <dl class="space-y-4">
+          {Astro.props.details.map((d) => (
+            <div>
+              <dt class="font-label-caps text-[10px] text-on-surface-variant/60 uppercase">{d.label}</dt>
+              <dd class="font-body-md text-body-md text-primary">{d.value}</dd>
+            </div>
+          ))}
+        </dl>
+        <div class="mt-8 pt-6 border-t border-primary/10">
+          <button class="w-full py-4 bg-primary text-on-primary font-label-caps text-label-caps tracking-widest hover:opacity-90 transition-opacity">
+            RESERVAR MESA
+          </button>
+        </div>
+      </div>
+      <div class="relative aspect-[3/4] overflow-hidden">
+        <img
+          class="w-full h-full object-cover"
+          src={Astro.props.sidebarImage}
+          alt={Astro.props.sidebarImageAlt}
+          loading="lazy"
+        />
+        <div class="absolute bottom-4 left-4 right-4 p-4 bg-white/90 backdrop-blur-sm">
+          <p class="font-label-caps text-[10px] text-secondary">METODOLOGÍA SABORES</p>
+          <p class="font-body-md text-primary italic">{Astro.props.sidebarCaption}</p>
+        </div>
+      </div>
+    </aside>
+  </div>
+</section>

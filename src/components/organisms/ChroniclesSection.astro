@@ -1,0 +1,33 @@
+---
+import Button from '../atoms/Button.astro'
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+import CardExperiencia from '../molecules/CardExperiencia.astro'
+import type { Experiencia } from '../../data/experiencias'
+
+interface Props {
+  experiencias: Experiencia[]
+}
+
+const { experiencias } = Astro.props
+---
+
+<section class="py-stack-lg bg-surface">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    <AnimatedReveal>
+      <div class="text-center mb-stack-md">
+        <h2 class="font-headline-md text-headline-md serif mb-2">Crónicas Recientes</h2>
+        <div class="w-16 h-[2px] bg-secondary mx-auto"></div>
+      </div>
+    </AnimatedReveal>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter">
+      {experiencias.slice(0, 4).map((exp, i) => (
+        <AnimatedReveal delay={(i + 1) as 1 | 2 | 3 | 4}>
+          <CardExperiencia {...exp} />
+        </AnimatedReveal>
+      ))}
+    </div>
+    <div class="mt-stack-lg text-center">
+      <Button href="/experiencias">Ver todas las crónicas</Button>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,43 @@
+---
+import LabelTag from '../atoms/LabelTag.astro'
+import { Eye, BarChart3 } from 'lucide'
+import { icon } from '../../lib/lucide'
+---
+
+<section class="bg-surface-container-low py-stack-lg mt-stack-lg border-y border-primary/5">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center">
+    <div>
+      <LabelTag>Nuestro Método</LabelTag>
+      <h2 class="font-display-lg text-headline-md md:text-display-lg text-primary mb-6 mt-4">Crónicas reales para viajeros conscientes.</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant mb-8">
+        No otorgamos estrellas. No construimos rankings por popularidad. Visitamos cada lugar de forma anónima, observamos con atención y describimos lo que encontramos sin juzgar.
+      </p>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <span class="text-secondary pt-1" set:html={icon(Eye, 24, 1.5)} />
+          <div>
+            <h4 class="font-bold text-primary font-body-md">Visitas Reales</h4>
+            <p class="text-on-surface-variant text-sm">Llegamos como cualquier visitante, sin anunciar nuestra presencia.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-4">
+          <span class="text-secondary pt-1" set:html={icon(BarChart3, 24, 1.5)} />
+          <div>
+            <h4 class="font-bold text-primary font-body-md">Análisis Estructurado</h4>
+            <p class="text-on-surface-variant text-sm">Evaluamos bajo cinco ejes clave de vivencia y autenticidad.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="aspect-square bg-surface border border-secondary/20 p-8 flex items-center justify-center">
+        <div class="text-center">
+          <span class="text-[64px] text-secondary mb-6 block" set:html={icon(BarChart3, 64, 1)} />
+          <p class="font-display-lg text-headline-md italic text-primary">"Nicaragua se vive mejor cuando se recorre con atención."</p>
+        </div>
+      </div>
+      <div class="absolute -top-4 -right-4 w-24 h-24 border-t border-r border-secondary opacity-30 pointer-events-none"></div>
+      <div class="absolute -bottom-4 -left-4 w-24 h-24 border-b border-l border-secondary opacity-30 pointer-events-none"></div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,63 @@
+---
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+import { UserSearch, Eye, Map, Info, Verified } from 'lucide'
+import { icon } from '../../lib/lucide'
+---
+
+<section class="py-stack-lg bg-surface border-t border-primary/5">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    <AnimatedReveal>
+      <div class="text-center mb-stack-lg">
+        <h2 class="font-label-caps text-label-caps text-primary tracking-[0.4em] mb-4">Nuestro Método</h2>
+        <div class="w-12 h-[1px] bg-secondary mx-auto mb-4"></div>
+      </div>
+    </AnimatedReveal>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-stack-md">
+      <AnimatedReveal delay={1}>
+        <div class="text-center group">
+          <div class="w-12 h-12 mx-auto mb-4 border border-secondary/20 flex items-center justify-center group-hover:bg-secondary/5 transition-all">
+            <span class="text-secondary" set:html={icon(UserSearch, 24, 1.5)} />
+          </div>
+          <h4 class="font-label-caps text-label-caps text-primary mb-3">Visitas reales</h4>
+          <p class="text-[12px] text-on-surface-variant leading-relaxed">Llegamos como cualquier visitante. No anunciamos nuestra presencia.</p>
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={2}>
+        <div class="text-center group">
+          <div class="w-12 h-12 mx-auto mb-4 border border-secondary/20 flex items-center justify-center group-hover:bg-secondary/5 transition-all">
+            <span class="text-secondary" set:html={icon(Eye, 24, 1.5)} />
+          </div>
+          <h4 class="font-label-caps text-label-caps text-primary mb-3">Observación estructurada</h4>
+          <p class="text-[12px] text-on-surface-variant leading-relaxed">Analizamos cinco ejes clave para comprender la experiencia sin calificar.</p>
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={3}>
+        <div class="text-center group">
+          <div class="w-12 h-12 mx-auto mb-4 border border-secondary/20 flex items-center justify-center group-hover:bg-secondary/5 transition-all">
+            <span class="text-secondary" set:html={icon(Map, 24, 1.5)} />
+          </div>
+          <h4 class="font-label-caps text-label-caps text-primary mb-3">Clasificación por experiencia</h4>
+          <p class="text-[12px] text-on-surface-variant leading-relaxed">Organizamos por tipo de vivencia, no por ranking ni popularidad.</p>
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={4}>
+        <div class="text-center group">
+          <div class="w-12 h-12 mx-auto mb-4 border border-secondary/20 flex items-center justify-center group-hover:bg-secondary/5 transition-all">
+            <span class="text-secondary" set:html={icon(Info, 24, 1.5)} />
+          </div>
+          <h4 class="font-label-caps text-label-caps text-primary mb-3">Información práctica</h4>
+          <p class="text-[12px] text-on-surface-variant leading-relaxed">Datos útiles para que tu visita sea más sencilla y consciente.</p>
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={5}>
+        <div class="text-center group">
+          <div class="w-12 h-12 mx-auto mb-4 border border-secondary/20 flex items-center justify-center group-hover:bg-secondary/5 transition-all">
+            <span class="text-secondary" set:html={icon(Verified, 24, 1.5)} />
+          </div>
+          <h4 class="font-label-caps text-label-caps text-primary mb-3">Transparencia</h4>
+          <p class="text-[12px] text-on-surface-variant leading-relaxed">Somos un proyecto editorial. La confianza se construye con claridad.</p>
+        </div>
+      </AnimatedReveal>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+---
+import { site } from '../../config/site'
+import NewsletterForm from '../molecules/NewsletterForm.astro'
+import { Globe, Camera, Mail } from 'lucide'
+import { icon } from '../../lib/lucide'
+import { getLangFromUrl, t } from '../../i18n'
+
+const lang = getLangFromUrl(Astro.url)
+
+const navItems = [
+  { key: 'nav.inicio', href: '/' },
+  { key: 'nav.experiencias', href: '/experiencias' },
+  { key: 'nav.sobre-nosotros', href: '/sobre-nosotros' },
+  { key: 'nav.metodologia', href: '/metodologia' },
+]
+---
+
+<footer class="bg-primary text-on-primary">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-stack-md px-margin-mobile md:px-gutter py-stack-lg max-w-container-max mx-auto">
+    <div class="space-y-4">
+      <div class="text-headline-md font-display-lg text-on-primary serif">{site.brand.name}</div>
+      <p class="font-body-md text-on-primary/70 text-sm italic">{t(lang, 'footer.slogan')}</p>
+      <div class="flex gap-4 pt-4">
+        <a href={site.social.facebook} class="w-8 h-8 flex items-center justify-center border border-on-primary/20 hover:bg-secondary transition-colors" aria-label="Facebook">
+          <span set:html={icon(Globe, 16, 1.5)} />
+        </a>
+        <a href={site.social.instagram} class="w-8 h-8 flex items-center justify-center border border-on-primary/20 hover:bg-secondary transition-colors" aria-label="Instagram">
+          <span set:html={icon(Camera, 16, 1.5)} />
+        </a>
+        <a href={`mailto:${site.social.email}`} class="w-8 h-8 flex items-center justify-center border border-on-primary/20 hover:bg-secondary transition-colors" aria-label="Email">
+          <span set:html={icon(Mail, 16, 1.5)} />
+        </a>
+      </div>
+    </div>
+
+    <div class="space-y-4">
+      <h4 class="font-label-caps text-label-caps font-bold">{t(lang, 'footer.navegacion')}</h4>
+      <ul class="space-y-2 font-body-md text-sm">
+        {
+          navItems.map((item) => (
+            <li>
+              <a href={item.href} class="text-on-primary/70 hover:text-on-primary transition-colors">{t(lang, item.key)}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    <div class="space-y-4">
+      <h4 class="font-label-caps text-label-caps font-bold">{t(lang, 'footer.proyecto')}</h4>
+      <ul class="space-y-2 font-body-md text-sm">
+        <li><a href="/sobre-nosotros" class="text-on-primary/70 hover:text-on-primary transition-colors">{t(lang, 'footer.proyecto.sobre')}</a></li>
+        <li><a href="/metodologia" class="text-on-primary/70 hover:text-on-primary transition-colors">{t(lang, 'footer.proyecto.metodologia')}</a></li>
+        <li><a href={`mailto:${site.social.email}`} class="text-on-primary/70 hover:text-on-primary transition-colors">{t(lang, 'footer.proyecto.contacto')}</a></li>
+      </ul>
+    </div>
+
+    <div class="space-y-4">
+      <h4 class="font-label-caps text-label-caps font-bold">{t(lang, 'footer.siguenos')}</h4>
+      <p class="text-sm text-on-primary/70">{t(lang, 'footer.slogan')}</p>
+      <div class="pt-2">
+        <p class="text-[10px] uppercase tracking-widest text-on-primary/40">León, Nicaragua</p>
+      </div>
+      <div class="pt-4">
+        <NewsletterForm variant="dark" />
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t border-on-primary/10 px-margin-mobile md:px-gutter py-8 max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center text-xs text-on-primary/40 font-label-caps">
+    <span>© {new Date().getFullYear()} {site.brand.name}. {t(lang, 'footer.derechos')}</span>
+    <span class="mt-4 md:mt-0">{t(lang, 'footer.diseno')}</span>
+  </div>
+</footer>

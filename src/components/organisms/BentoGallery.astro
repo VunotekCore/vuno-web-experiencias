@@ -1,0 +1,67 @@
+---
+import LabelTag from '../atoms/LabelTag.astro'
+import AnimatedReveal from '../atoms/AnimatedReveal.astro'
+
+interface GalleryImage {
+  src: string
+  alt: string
+}
+
+interface Props {
+  title: string
+  images: [GalleryImage, GalleryImage, GalleryImage, GalleryImage]
+}
+---
+
+<section class="bg-surface-container-low py-stack-lg">
+  <div class="max-w-container-max mx-auto px-margin-mobile md:px-gutter">
+    <AnimatedReveal>
+      <div class="text-center mb-stack-md">
+        <LabelTag>Fragmentos Visuales</LabelTag>
+        <h2 class="font-headline-md text-headline-md text-primary mt-2">{Astro.props.title}</h2>
+      </div>
+    </AnimatedReveal>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4 auto-rows-[250px]">
+      <AnimatedReveal delay={1}>
+        <div class="md:col-span-2 md:row-span-2 overflow-hidden group">
+          <img
+            class="w-full h-full object-cover img-lift"
+            src={Astro.props.images[0].src}
+            alt={Astro.props.images[0].alt}
+            loading="lazy"
+          />
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={2}>
+        <div class="md:col-span-2 overflow-hidden group">
+          <img
+            class="w-full h-full object-cover img-lift"
+            src={Astro.props.images[1].src}
+            alt={Astro.props.images[1].alt}
+            loading="lazy"
+          />
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={3}>
+        <div class="overflow-hidden group">
+          <img
+            class="w-full h-full object-cover img-lift"
+            src={Astro.props.images[2].src}
+            alt={Astro.props.images[2].alt}
+            loading="lazy"
+          />
+        </div>
+      </AnimatedReveal>
+      <AnimatedReveal delay={4}>
+        <div class="overflow-hidden group">
+          <img
+            class="w-full h-full object-cover img-lift"
+            src={Astro.props.images[3].src}
+            alt={Astro.props.images[3].alt}
+            loading="lazy"
+          />
+        </div>
+      </AnimatedReveal>
+    </div>
+  </div>
+</section>

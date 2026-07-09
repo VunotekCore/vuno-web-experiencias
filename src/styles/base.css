@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface: #fbf9f8;
+  --color-surface-dim: #dbd9d9;
+  --color-surface-bright: #fbf9f8;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f5f3f3;
+  --color-surface-container: #efeded;
+  --color-surface-container-high: #eae8e7;
+  --color-surface-container-highest: #e4e2e2;
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #43474d;
+  --color-inverse-surface: #303030;
+  --color-inverse-on-surface: #f2f0f0;
+  --color-outline: #74777e;
+  --color-outline-variant: #c4c6ce;
+  --color-surface-tint: #4a607b;
+  --color-primary: #000f21;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #0d253d;
+  --color-on-primary-container: #778daa;
+  --color-inverse-primary: #b2c8e7;
+  --color-secondary: #795921;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #fdd08d;
+  --color-on-secondary-container: #785720;
+  --color-tertiary: #0e0e0c;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #232421;
+  --color-on-tertiary-container: #8b8b87;
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #d2e4ff;
+  --color-primary-fixed-dim: #b2c8e7;
+  --color-on-primary-fixed: #031d34;
+  --color-on-primary-fixed-variant: #334862;
+  --color-secondary-fixed: #ffddae;
+  --color-secondary-fixed-dim: #ebc07e;
+  --color-on-secondary-fixed: #281800;
+  --color-on-secondary-fixed-variant: #5e410b;
+  --color-tertiary-fixed: #e4e2dd;
+  --color-tertiary-fixed-dim: #c8c6c2;
+  --color-on-tertiary-fixed: #1b1c19;
+  --color-on-tertiary-fixed-variant: #474744;
+  --color-background: #fbf9f8;
+  --color-on-background: #1b1c1c;
+  --color-surface-variant: #e4e2e2;
+
+  --font-display-lg: "Source Serif 4", serif;
+  --font-headline-md: "Source Serif 4", serif;
+  --font-body-lg: "Work Sans", sans-serif;
+  --font-body-md: "Work Sans", sans-serif;
+  --font-label-caps: "Work Sans", sans-serif;
+
+  --text-display-lg: 56px;
+  --text-display-lg--line-height: 1.1;
+  --text-display-lg--font-weight: 600;
+  --text-display-lg--letter-spacing: -0.02em;
+
+  --text-display-lg-mobile: 36px;
+  --text-display-lg-mobile--line-height: 1.2;
+  --text-display-lg-mobile--font-weight: 600;
+
+  --text-headline-md: 32px;
+  --text-headline-md--line-height: 1.3;
+  --text-headline-md--font-weight: 500;
+
+  --text-body-lg: 18px;
+  --text-body-lg--line-height: 1.6;
+  --text-body-lg--font-weight: 400;
+
+  --text-body-md: 16px;
+  --text-body-md--line-height: 1.6;
+  --text-body-md--font-weight: 400;
+
+  --text-label-caps: 12px;
+  --text-label-caps--line-height: 1.0;
+  --text-label-caps--font-weight: 600;
+  --text-label-caps--letter-spacing: 0.1em;
+
+  --spacing-unit: 8px;
+  --spacing-container-max: 1280px;
+  --spacing-gutter: 24px;
+  --spacing-margin-mobile: 20px;
+  --spacing-stack-sm: 16px;
+  --spacing-stack-md: 32px;
+  --spacing-stack-lg: 64px;
+
+  --radius-DEFAULT: 0;
+  --radius-lg: 0;
+  --radius-xl: 0;
+  --radius-full: 9999px;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-body-md);
+    background-color: var(--color-background);
+    color: var(--color-on-surface);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  *:focus-visible {
+    outline: 2px solid var(--color-secondary);
+    outline-offset: 2px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
+.animate-slideUp { animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-scaleIn { animation: scaleIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards; }

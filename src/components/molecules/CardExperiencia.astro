@@ -1,0 +1,44 @@
+---
+import LabelTag from '../atoms/LabelTag.astro'
+import ReadingTime from '../atoms/ReadingTime.astro'
+import { ArrowRight } from 'lucide'
+import { icon } from '../../lib/lucide'
+
+interface Props {
+  title: string
+  category: string
+  excerpt: string
+  image: string
+  imageAlt: string
+  location: string
+  readingTime: number
+  slug: string
+}
+---
+
+<article class="group cursor-pointer">
+  <div class="relative overflow-hidden mb-6 aspect-[4/5]">
+    <img
+      class="w-full h-full object-cover img-lift"
+      src={Astro.props.image}
+      alt={Astro.props.imageAlt}
+      loading="lazy"
+    />
+    <div class="absolute top-4 right-4 bg-surface px-3 py-1 font-label-caps text-[10px] tracking-widest uppercase border border-primary/10">
+      {Astro.props.location}
+    </div>
+  </div>
+  <div class="space-y-3">
+    <LabelTag>{Astro.props.category}</LabelTag>
+    <h3 class="font-headline-md text-headline-md text-primary leading-tight group-hover:text-secondary transition-colors">
+      <a href={`/experiencia/${Astro.props.slug}`} class="no-underline">
+        {Astro.props.title}
+      </a>
+    </h3>
+    <p class="font-body-md text-on-surface-variant line-clamp-2">{Astro.props.excerpt}</p>
+    <div class="flex items-center justify-between pt-2 text-on-surface-variant font-label-caps text-label-caps border-t border-primary/5">
+      <ReadingTime minutes={Astro.props.readingTime} />
+      <span class="text-primary group-hover:translate-x-1 transition-transform" set:html={icon(ArrowRight, 20, 1.5)} />
+    </div>
+  </div>
+</article>

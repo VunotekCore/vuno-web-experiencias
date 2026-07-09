@@ -1,0 +1,23 @@
+---
+interface Props {
+  title: string
+  description?: string
+  ogImage?: string
+  ogType?: 'website' | 'article'
+  noindex?: boolean
+  canonical?: string
+}
+
+const { title, description, ogImage, ogType = 'website', noindex, canonical } = Astro.props
+const siteTitle = title
+const siteDesc = description
+---
+
+<meta name="description" content={siteDesc} />
+<meta property="og:title" content={siteTitle} />
+<meta property="og:description" content={siteDesc} />
+<meta property="og:type" content={ogType} />
+<meta property="og:image" content={ogImage} />
+{canonical && <link rel="canonical" href={canonical} />}
+{noindex && <meta name="robots" content="noindex, nofollow" />}
+<meta name="theme-color" content="#000f21" />
